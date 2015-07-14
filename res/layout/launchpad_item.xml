@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/my_space_launchpad_item_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/B2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 由于高度在代码里根据屏幕宽度动态调整，为了里面（图标+文字）根据内容高度垂直居中只好再套一层 -->
+    <RelativeLayout
+        android:id="@+id/my_space_launchpad_item_center_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:duplicateParentState="true">
+
+        <ImageView
+            android:id="@+id/my_space_launchpad_item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:duplicateParentState="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/my_space_launchpad_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/my_space_launchpad_item_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:text="应用"
+            android:textSize="12sp"/>
+
+        <!-- 占位用，以便父视图占满GridView的一格 -->
+        <TextView
+            android:id="@+id/my_space_launchpad_item_placeholder"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/my_space_launchpad_item_icon"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+</RelativeLayout>

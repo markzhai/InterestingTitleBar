@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="L1">#E0E0E0</color>
+    <color name="B2">#FFFFFF</color>
+    <color name="T12">#2D2D2D</color>
+    <color name="T12_click">#802D2D2D</color>
+    <color name="T12_disable">#4D2D2D2D</color>
+    <color name="bar_title_text_shadow">#000000</color>
+    <color name="status_bar_shadow_bg">#26000000</color>
+</resources>

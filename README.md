@@ -1,6 +1,8 @@
 # InterestingTitleBar
 Interesting android title bar with immersive status bar and scroll animation like tumblr app.
 
+![Sample](art/recording.gif)
+
 Pre-requisites
 --------------
 
@@ -41,7 +43,7 @@ TODO
 Screenshots
 -----------
 
-![Transparent](screenshots/Z1_1.jpg "Browse local music file")
-![Turn to opaque](screenshots/Z1_2.jpg "Fullscreen music player")
-![Transparent listview](screenshots/Z1_3.jpg "Fullscreen music player")
-![Turn to opaque](screenshots/Z1_4.jpg "Fullscreen music player")
+![Transparent](art/Z1_1.jpg "Browse local music file")
+![Turn to opaque](art/Z1_2.jpg "Fullscreen music player")
+![Transparent listview](art/Z1_3.jpg "Fullscreen music player")
+![Turn to opaque](art/Z1_4.jpg "Fullscreen music player")

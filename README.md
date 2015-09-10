@@ -1,4 +1,4 @@
-# InterestingTitleBar [![GitHub release](https://img.shields.io/badge/sample%20apk-2.0.0alpha-brightgreen.svg?style=flat)](https://github.com/markzhai/InterestingTitleBar/releases/download/v0.9.0/sample-debug.apk)
+# InterestingTitleBar [![GitHub release](https://img.shields.io/badge/sample%20apk-0.9.0-brightgreen.svg?style=flat)](https://github.com/markzhai/InterestingTitleBar/releases/download/v0.9.0/sample-debug.apk)
 Interesting android title bar with immersive status bar and scroll animation like tumblr app (color of icon and text on title bar gradually change to end color)
 
 ![Sample](art/recording.gif)

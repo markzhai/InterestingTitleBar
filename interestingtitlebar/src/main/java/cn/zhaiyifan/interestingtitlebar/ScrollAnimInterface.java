@@ -4,7 +4,7 @@ import android.widget.AbsListView;
 
 /**
  * Interface for scroll animation.
- * <p/>
+ * <p>
  * Created by markzhai on 2015/3/8.
  */
 public interface ScrollAnimInterface {

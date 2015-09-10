@@ -1,1 +1,1 @@
-include ':app', ':interestingtitlebar'
+include ':sample', ':interestingtitlebar'

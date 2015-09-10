@@ -1,5 +1,5 @@
 # InterestingTitleBar
-Interesting android title bar with immersive status bar and scroll animation like tumblr app.
+Interesting android title bar with immersive status bar and scroll animation like tumblr app (color of icon and text on title bar gradually change to end color)
 
 ![Sample](art/recording.gif)
 
@@ -13,8 +13,8 @@ Immersive window modes
 
 Different from SystemBarTint project, this titlebar project doesn't require android:fitsSystemWindows="true", and it does all padding work for you.
 
-How-to
---------------
+Usage
+-----
 You may check the demo activity to see its usage, but nomally:
 
 ```java
@@ -37,7 +37,7 @@ The bar will do drawing of shadow on status bar for you.
 TODO
 -----------
 1. More animation.
-2. Better support for immersive titlebar.
+2. Better support for immersive mode.
 3. Material design support.
 
 Screenshots

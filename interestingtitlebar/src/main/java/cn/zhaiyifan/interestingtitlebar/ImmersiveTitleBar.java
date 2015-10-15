@@ -9,11 +9,11 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 import android.view.Window;
+import cn.zhaiyifan.interestingtitlebar.utils.CompatibilityUtil;
+import cn.zhaiyifan.interestingtitlebar.utils.ViewUtils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-
-import cn.zhaiyifan.interestingtitlebar.utils.ViewUtils;
 
 /**
  * Immersive TitleBar
@@ -80,7 +80,7 @@ public class ImmersiveTitleBar extends ExtendRelativeLayout {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         // Immersive title bar is open, deal with shadow
-        if (mImmersiveTitleBarEnabled && Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
+        if (isNeedDrawShadow()) {
             if (mShadowMode == SHADOW_MODE_DRAWABLE && mShadowDrawable != null) {
                 mShadowDrawable.draw(canvas);
             } else {
@@ -90,7 +90,21 @@ public class ImmersiveTitleBar extends ExtendRelativeLayout {
     }
 
     /**
+     * We need to draw shadow for kitkat or some special ROM on lollipop
+     * @return
+     */
+    private boolean isNeedDrawShadow() {
+        if (mImmersiveTitleBarEnabled) {
+            if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) return true;
+            if (CompatibilityUtil.getMIUIVersion() >= 6) return true;
+            if (CompatibilityUtil.isFlyme()) return true;
+        }
+        return false;
+    }
+
+    /**
      * open this if using fitsSystemWindows on root layout
+     *
      * @param fitsSystemWindows android:fitsSystemWindows
      */
     public void setTitleBarFitsSystemWindows(boolean fitsSystemWindows) {
